@@ -1,0 +1,74 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:padding="16dp"
+        android:orientation="horizontal">
+
+        <!-- Image Étudiant -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageEtud"
+            android:layout_width="78dp"
+            android:layout_height="81dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Conteneur des informations -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- ID (Hidden) -->
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID: 12345"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <!-- Nom -->
+            <TextView
+                android:id="@+id/nom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8sp"
+                android:text="Nom: Dupont"
+                android:textColor="#555"
+                android:textSize="16sp" />
+
+            <!-- Prénom -->
+            <TextView
+                android:id="@+id/prenom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8sp"
+                android:text="Prénom: Jean"
+                android:textColor="#555"
+                android:textSize="16sp" />
+
+            <!-- Date de naissance -->
+            <TextView
+                android:id="@+id/date_naissance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date de naissance: 01/01/2000"
+                android:textColor="#555"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
